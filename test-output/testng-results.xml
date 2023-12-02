@@ -1,25 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-19T11:44:23 IST" name="Default suite" finished-at="2023-11-19T11:45:14 IST" duration-ms="50837">
+  <suite started-at="2023-12-02T16:51:31 IST" name="Suite" finished-at="2023-12-02T16:52:41 IST" duration-ms="69644">
     <groups>
     </groups>
-    <test started-at="2023-11-19T11:44:23 IST" name="Default test" finished-at="2023-11-19T11:45:14 IST" duration-ms="50837">
-      <class name="ai.aptipro.tests.MyAccountPageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ai.aptipro.tests.MyAccountPageTests@69e153c5]" started-at="2023-11-19T11:44:23 IST" name="setUp" finished-at="2023-11-19T11:44:48 IST" duration-ms="24626" status="PASS">
+    <test started-at="2023-12-02T16:51:31 IST" name="Test" finished-at="2023-12-02T16:52:41 IST" duration-ms="69644">
+      <class name="ai.aptipro.tests.landingPageTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ai.aptipro.tests.landingPageTests@3e8c3cb]" started-at="2023-12-02T16:51:32 IST" name="setUp" finished-at="2023-12-02T16:52:01 IST" duration-ms="28840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="changeState()[pri:0, instance:ai.aptipro.tests.MyAccountPageTests@69e153c5]" started-at="2023-11-19T11:44:48 IST" name="changeState" finished-at="2023-11-19T11:45:13 IST" duration-ms="25291" status="PASS">
+        <test-method signature="clickOnSignInButton()[pri:0, instance:ai.aptipro.tests.landingPageTests@3e8c3cb]" started-at="2023-12-02T16:52:01 IST" name="clickOnSignInButton" finished-at="2023-12-02T16:52:02 IST" duration-ms="1352" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://dev.aptipro.ai/signina] but found [http://dev.aptipro.ai/signin]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://dev.aptipro.ai/signina] but found [http://dev.aptipro.ai/signin]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at ai.aptipro.tests.landingPageTests.clickOnSignInButton(landingPageTests.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changeState -->
-        <test-method is-config="true" signature="closeDown()[pri:0, instance:ai.aptipro.tests.MyAccountPageTests@69e153c5]" started-at="2023-11-19T11:45:13 IST" name="closeDown" finished-at="2023-11-19T11:45:14 IST" duration-ms="775" status="PASS">
+        </test-method> <!-- clickOnSignInButton -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:ai.aptipro.tests.landingPageTests@3e8c3cb]" started-at="2023-12-02T16:52:03 IST" name="closeDown" finished-at="2023-12-02T16:52:04 IST" duration-ms="923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDown -->
-      </class> <!-- ai.aptipro.tests.MyAccountPageTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ai.aptipro.tests.landingPageTests@3e8c3cb]" started-at="2023-12-02T16:52:04 IST" name="setUp" finished-at="2023-12-02T16:52:23 IST" duration-ms="18890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickOnSignUpButton()[pri:0, instance:ai.aptipro.tests.landingPageTests@3e8c3cb]" started-at="2023-12-02T16:52:23 IST" name="clickOnSignUpButton" finished-at="2023-12-02T16:52:23 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSignUpButton -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:ai.aptipro.tests.landingPageTests@3e8c3cb]" started-at="2023-12-02T16:52:23 IST" name="closeDown" finished-at="2023-12-02T16:52:24 IST" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ai.aptipro.tests.landingPageTests@3e8c3cb]" started-at="2023-12-02T16:52:24 IST" name="setUp" finished-at="2023-12-02T16:52:40 IST" duration-ms="16328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickonGetStartedButton()[pri:0, instance:ai.aptipro.tests.landingPageTests@3e8c3cb]" started-at="2023-12-02T16:52:40 IST" name="clickonGetStartedButton" finished-at="2023-12-02T16:52:40 IST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonGetStartedButton -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:ai.aptipro.tests.landingPageTests@3e8c3cb]" started-at="2023-12-02T16:52:40 IST" name="closeDown" finished-at="2023-12-02T16:52:41 IST" duration-ms="668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- ai.aptipro.tests.landingPageTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

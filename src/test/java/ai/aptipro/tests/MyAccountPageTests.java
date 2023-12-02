@@ -15,13 +15,17 @@ public class MyAccountPageTests extends BaseTest {
 
 	@Test
 	public void changePasswordFlowCheck() throws InterruptedException {
+		
 		landingPage.clickOnSignInButton()
 				.login(AccessProperties.getProperty().validEmailId(), AccessProperties.getProperty().currentPassword())
 				.clickOnMyAccountButton();
-		myAccountPage.clickOnsecurityButton().clickOnchangePasswordButton()
+		
+		myAccountPage.clickOnsecurityButton()
+				.clickOnchangePasswordButton()
 				.entercurrentPassword(AccessProperties.getProperty().currentPassword())
 				.enterNewPassword(AccessProperties.getProperty().newPassword())
 				.enterConfirmNewPasswordField(AccessProperties.getProperty().newPassword()).clickSaveChangesButton();
+		
 		Thread.sleep(5000);
 		String actualUrl = DriverManager.getDriver().getCurrentUrl();
 		Assert.assertEquals(actualUrl, "http://dev.aptipro.ai/");
@@ -32,7 +36,9 @@ public class MyAccountPageTests extends BaseTest {
 		landingPage.clickOnSignInButton()
 				.login(AccessProperties.getProperty().validEmailId(), AccessProperties.getProperty().currentPassword())
 				.clickOnMyAccountButton();
-		myAccountPage.clickOnEditButton().selectstate(AccessProperties.getProperty().state()).clickSaveChangesButton()
+		myAccountPage.clickOnEditButton()
+				.selectstate(AccessProperties.getProperty().state())
+				.clickSaveChangesButton()
 				.clickYesButtonOnAlert();
 	}
 
