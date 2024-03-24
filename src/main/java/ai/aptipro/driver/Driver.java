@@ -11,7 +11,7 @@ public class Driver {
 		WebDriver driver = new ChromeDriver();
 		DriverManager.setDriver(driver);
 		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		DriverManager.getDriver().get("http://dev.aptipro.ai");
+		DriverManager.getDriver().get("");
 	}
 
 	public static void closeDriver() {
